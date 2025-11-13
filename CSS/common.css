@@ -1,0 +1,219 @@
+/* 各个页面头尾相同的样式 */
+.wrapper{
+    margin: 0 auto;
+    width: 1240px;
+}
+/* -------------------快捷导航------------------- */
+.shortcut{
+    height: 52px;
+    background-color: #333;
+}
+.shortcut .wrapper{
+    display: flex;
+    justify-content: flex-end;
+    height: 52px;
+    /* background-color: pink; */
+    
+}
+.shortcut .wrapper ul{
+    display: flex;
+    line-height: 52px;
+}
+.shortcut .wrapper ul a{
+    padding: 0 15px;
+    font-size: 14px;
+    color: #fff;
+    border-right: 1px solid #999;
+}
+.shortcut .wrapper ul .active{
+    color: #5EB69C;
+}
+.shortcut .wrapper ul li:last-child a{
+    padding-right: 0;
+    border-right: 0 solid #000;
+}
+/* -----------------头部header------------------ */
+.header{
+    margin: 22px 0;
+}
+.header .wrapper{
+    height: 88px;
+    display: flex;
+}
+/* logo */
+.header .wrapper .logo{
+    margin-right: 41px;
+    width: 200px;
+    height: 88px;
+    font-size: 0;
+    /* background-color: pink; */
+    background: url('../images/logo.png');
+}
+/* 导航 */
+.header .wrapper .nav ul{
+    display: flex;
+    line-height: 88px;
+    margin-right: 28px;
+}
+.header .wrapper .nav ul a{
+    margin-right: 47px;
+    padding-bottom: 10px;
+}
+.header .wrapper .nav ul a:hover{
+    color: #5EB69C;
+    border-bottom: 2px solid #5EB69C;
+}
+/* 搜索 */
+.header .wrapper .search{
+    display: flex;
+    width: 170px;
+    height: 34px;
+    border-bottom: 2px solid #f4f4f4;
+    margin-top: 33px;
+    margin-right: 45px;
+}
+.header .wrapper .search .iconfont{
+    font-size: 18px;
+    color: #ccc;
+    margin-right: 8px;
+}
+.header .wrapper .search input{
+    /* input有默认宽度 */
+    /* 重置默认宽度 */
+    width: 0;
+    flex: 1;
+}
+.header .wrapper .search input::placeholder{
+    font-size: 16px;
+    color: #ccc;
+}
+/* 购物车 */
+.header .wrapper .cart{
+    position: relative;
+    margin-top: 32px;
+
+}
+.header .wrapper .iconfont{
+    font-size: 24px;
+}
+.header .wrapper .cart i{
+    position: absolute;
+    /* right定位右对齐，如何文字多了向左撑开，可能盖住其他内容 */
+    left: 15px;
+    top: 1px;
+    /* width: 20px; */
+    height: 15px;
+    padding: 0 6px;
+    background-color: #E26237;
+    border-radius: 7.5px;
+    font-size: 14px;
+    color: #FFFEFE ;
+    line-height: 15px;
+    text-align: center;
+}
+/* -----------------底部区域------------------ */
+.footer{
+    height: 581px;
+    background-color: #F5F5F5;
+}
+.footer .wrapper{
+    height: 581px;
+}
+/* 服务 */
+.footer .wrapper .service{
+    height: 178px;
+    border-bottom: 1px solid #E8E8E8;   
+    padding: 60px 0;
+}
+.footer .wrapper .service ul{
+    display: flex;
+    justify-content: space-evenly;
+}
+.footer .wrapper .service li{
+    display: flex;
+    height: 58px;
+    width: 190px;
+    /* background-color: rebeccapurple; */
+}
+.footer .wrapper .service li h5{
+    width: 58px;
+    height: 58px;
+    background: url('../images/sprite.png');
+    margin-right: 20px;
+}
+.footer .wrapper .service li:nth-child(2) h5{
+    background: url('../images/sprite.png')0px -58px;
+}
+.footer .wrapper .service li:nth-child(3) h5{
+    background: url('../images/sprite.png')0px -116px;
+}
+.footer .wrapper .service li:nth-child(4) h5{
+    background: url('../images/sprite.png')0px -174px;
+}
+.footer .wrapper .service li p{
+    font-size: 28px;
+    color: #333;
+    line-height: 58px;
+}
+/* 帮助中心 */
+.footer .wrapper .help{
+    display: flex;
+    justify-content: space-between;
+    height: 302.5px;
+    /* background-color: pink; */
+    padding-top: 60px;
+}
+.footer .wrapper .help .left{
+    display: flex;
+}
+.footer .wrapper .help .left dl{
+    margin-right: 84px;
+}
+.footer .wrapper .help .left dl:last-child{
+    margin-right: 0px;
+}
+.footer .wrapper .help .left dt{
+    margin-bottom: 30px;
+    font-size: 18px;
+}
+.footer .wrapper .help .left dd{
+    margin-bottom: 10.5px;
+    font-size: 16px;
+    color: #969696;
+    line-height: 22px;
+}
+.footer .wrapper .help .left .iconfont{
+    margin-left: 5px;
+    color: #26b99b;
+}
+.footer .wrapper .help .right{
+    margin-left: 84px;
+}
+.footer .wrapper .help .right ul{
+    display: flex;
+}
+.footer .wrapper .help .right li:first-child{
+    margin-right: 55px;
+}
+.footer .wrapper .help .right li img{
+    width: 120px;
+    height: 120px;
+    margin-bottom: 10px;
+}
+.footer .wrapper .help .right li p{
+    text-align: center;
+    font-size: 16px;
+    color: #969696;
+}
+/* 版权 */
+.footer .wrapper .copyright{
+    text-align: center;
+    color: #A1A1A1;
+}
+.footer .wrapper .copyright p{
+    margin-bottom: 10px;
+}
+.footer .wrapper .copyright p a{
+    color: #A1A1A1;
+    margin: 0 10px;
+}
